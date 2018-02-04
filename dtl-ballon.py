@@ -140,16 +140,13 @@ def predict(inputTree, featLabels, testVec):
                 classLabel = secondDict[key]
                 return classLabel
     #return classLabel
-
-    
-    
+  
 
 def predicts(inputTree, featLabels, testDataSet):
     classLabelAll = []
     for testVec in testDataSet:
         classLabelAll.append(predict(inputTree, featLabels, testVec))
     return classLabelAll
-
 
 # Create Test Set
 def createTestSet():
